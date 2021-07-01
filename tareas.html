@@ -19,6 +19,7 @@
 
     <!-- Custom styles for this template-->
     <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/tareas.css">
 
 </head>
 
@@ -275,22 +276,113 @@
                 <!-- End of Topbar -->
 
                 <!-- Begin Page Content -->
-                <div class="container-fluid">
-                    <div class="row">
-                        
-                    </div>
-
-                    <!-- 
-                        CONTENIDO 
-                    -->
-                    
-
-
-
-                </div>
+                
                 <!-- /.container-fluid -->
+                <div class="container-fluid">
+                    <div class="formulario">
+                        <form id="form" class="form">
+                            <label for="fname">Nombre:</label>
+                            <input type="text" id="fname" name="fname" value="" required>
+
+                            <label for="lname"> Categoria:</label>
+                            <input type="text " id="lname" name="descripcion" value="" required>
+                            <label for="lname"> Descripción:</label>
+                            
+                            <input type="text " id="lname" name="descripcion" value="" required>                           
+                            <input type="submit" value="Enviar"> <br><br>
+                        </form>
+                   
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <h2>Lista de Tareas</h2>
+                                <thead>
+                                    <tr>
+                                      <th scope="col">Nombre</th>
+                                      <th scope="col">Categoria</th>
+                                      <th scope="col">Descripción</th>
+                                      <th scope="col">fecha de creación</th>
+                                      <th scope="col">Estado<br>(C/P)</th>
+                                      <th scope="col">Borrar Tarea</th>
+                                   
+                                    </tr>
+                                  </thead>
+                                  <tbody id="lista">
+                                    <tr>
+                                        <td>D3st1n1ty</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                        <td><input type="checkbox"> <input type="checkbox"></td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>D3st1n1ty</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                        <td><input type="checkbox"> <input type="checkbox"></td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>D3st1n1ty</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                        <td><input type="checkbox"> <input type="checkbox"></td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>D3st1n1ty</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                        <td><input type="checkbox"> <input type="checkbox"></td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>D3st1n1ty</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                        <td><input type="checkbox"> <input type="checkbox"></td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>D3st1n1ty</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                        <td>@mdo</td>
+                                        <td><input type="checkbox"> <input type="checkbox"></td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>                                    
+                                </tbody>
+                             </table>
+                             <div class="eliminar">
+                                <button>Eliminar</button>
+                             </div>
 
             </div>
+            <div>
+                <h3>Tareas Completadas:TODAS XD</h3>
+                <ol type=”A”>
+                    <li>Ser rico</li>
+                    <li>Planificar una Conquista</li>
+                    <li>Vigilar el mundo</li>
+                    <li>Ojo de Halcon</li>
+                  </ol>
+            </div>
+            <div>
+                <h3>Tareas Pendientes:NINGUNAS, SOMOS PRO</h3>
+                <ol type=”A”>
+                    <li>Dominar el Mundo</li>
+                    <li>Eliminar las Guerras</li>
+                    <li>Eliminar las Fronteras</li>
+                    <li>Eliminar los Tanqes</li>
+                  </ol>
+            </div>
+            
+            
             <!-- End of Main Content -->
 
             <!-- Footer -->
