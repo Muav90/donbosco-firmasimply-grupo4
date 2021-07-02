@@ -280,8 +280,8 @@
                     <div class="container-fluid">
                         <div class="formulario">
                             <form id="form" class="form">
-                               <input type="submit" value="Entrada">
-                               <input type="submit" value="Salida">
+                               <input id="entrada" type="submit" value="Entrada">
+                               <input id="salida" type="submit" value="Salida">
                                <label for="text">Comentarios:</label>
                                <input type="text" id="Comentarios" placeholder="" value="">
                                <input type="submit" value="Enviar">
@@ -300,7 +300,7 @@
                                         <th score="col">Estado</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody id="addfirma-list">
                                     <tr>
                                         <th scope="row">1</th>
                                         <td>Maria Abalos</td>
@@ -499,6 +499,7 @@
     <script type="module" src="/assets/js/firmasimply/app.js"></script>
     <script type="module" src="/assets/js/firmasimply/logout.js"></script>
     <script type="module" src="/assets/js/firmasimply/pildoras.js"></script>
+    <script type="module" src="/assets/js/firmasimply/asistencia.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="/assets/vendor/jquery/jquery.min.js"></script>
     <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
