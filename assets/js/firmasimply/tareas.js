@@ -3,31 +3,31 @@ import Tarea from './Modules/Tarea.js';
 import Categoria from './Modules/Categoria.js';
 
 // Funcionalidad mostrar listado de tareas
-getListadoTareas();
-async function getListadoTareas() {
-    let listadoTareas = await Pildora.getListadoTareas();
-    console.log(listadoPildoras);
-    const list = document.getElementById('listado')
-    // books.forEach((book) => UI.addBookToList(book))
-    //let finales = listado.reverse();
-    for (let i = 0; i < listadoPildoras.length; i++) {
-        if (i > 0 & i == 6) {
+getListadoTarea();
+async function getListadoTarea() {
+    let listadoTareas = await Tarea.getListadoTareas();
+    console.log(listadoTareas);
+    const list = document.getElementById('lista')
+    
+    for (let i = 0; i < listadoTareas.length; i++) {
+        if (i > 0 ) {
             const row = document.createElement('tr')
 
             row.innerHTML = `
-                            <td>${listadoPildoras[i].id}</td>
-                            <td>${listadoPildoras[i].nombre}</td>
-                            <td>${listadoPildoras[i].descripcion}</td>
-                            <td>${listadoPildoras[i].fecha_presentacion}</td>
-                            <td>${listadoPildoras[i].created_at}</td>
-                            <td>${listadoPildoras[i].estado}</td>
-                            <td><button onclick="borrarPildora()">Borrar</button></td>
+            
+                            <td>${listadoTareas[i].titulo}</td>
+                            <td>${listadoTareas[i].categoria_id}</td>
+                            <td>${listadoTareas[i].descripcion}</td>
+                            <td>${listadoTareas[i].created_at}</td>
+                            <td>${listadoTareas[i].estado}</td>
+                            <td><button onclick="borrarTarea()">Borrar</button></td>
                             `
 
             list.appendChild(row)
         }
     }
 }
+
 // Funcionalidad crear una tarea
 
 // Funcionalidad de borrar una tarea
