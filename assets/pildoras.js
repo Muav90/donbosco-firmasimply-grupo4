@@ -47,18 +47,18 @@ alert('pildora nueva creada', 'peligro');
 
 // Funcionalidad borrar píldora
 //borrarPildora();
-document.getElementById('Borrar').addEventListener('click', borrarPildora)
+/* document.getElementById('Borrar').addEventListener('click', borrarPildora)
 function pildoraRenove(e) {
     deletePildora(e.Pildora)
-    shwoAlert('Pildora borrada')
-}
+    shwoAlert('Pildora borrada') */
+/* } */
 // Borrar una tarea
 // let idPildora = 2;
 // Pildora.borrarPildora(idPildora);
 
-/* // Clear fields
+// Clear fields
     UI.clearFields()
-}
+
 document.getElementById('book-list').addEventListener('click', handleRemove)
 function handleRemove(e) {
     // Remove book from UI
@@ -67,7 +67,7 @@ function handleRemove(e) {
 
     // Remove book from store
     Store.removeBook(e.target.parentElement.previousElementSibling.textContent)
-} */
+} 
 
 // Funcionalidad marcar una píldora como presentada o pendiente
 marcarPildora();
@@ -78,4 +78,4 @@ marcarPildora();
 // Marcar una tarea como completada o pendiente
 let idPildora = 2;
 let data = { estado: 1 }; // 1 presentada, 0 pendiente
-Pildora.marcarPildora(data, idPildora);
+Pildora.marcarPildora(data, idPildora); 
