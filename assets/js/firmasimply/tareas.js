@@ -27,6 +27,25 @@ async function getListadoTarea() {
         }
     }
 }
+// Consultar el listado de píldoras
+Pildora.getListadoTarea();
+// Funcionalidad crear píldora
+
+var form = document.getElementById('form');
+async function crearTarea(e) {
+    e.preventDefault();
+    var crearTarea = {
+        nombre: document.getElementById('fname').value,
+        descripcion: document.getElementById('lname').value,
+        fecha_presentacion: document.getElementById('date').value,
+        estado: 0, // 0 pendiente, 1 presentada
+        user_id: Auth.getCoder().id, // esta funcion devuelve el id del coder logeado
+    }
+    await Pildora.crearPildora(crearPildora);
+    window.location.reload();
+};
+
+form.addEventListener('submit', crearPildoras)
 
 // Funcionalidad crear una tarea
 
