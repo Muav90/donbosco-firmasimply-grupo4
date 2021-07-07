@@ -3,6 +3,7 @@ import Tarea from './Modules/Tarea.js';
 import Categoria from './Modules/Categoria.js';
 
 // Funcionalidad mostrar listado de tareas
+<<<<<<< HEAD
 getListadoTarea();
 async function getListadoTarea() {
     let listadoTareas = await Tarea.getListadoTareas();
@@ -46,6 +47,8 @@ async function crearTarea(e) {
 };
 
 form.addEventListener('submit', crearPildoras)
+=======
+>>>>>>> cc5517dda264aac0a98f5b9b93e8e313dd6d2b9f
 
 // Funcionalidad crear una tarea
 

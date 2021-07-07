@@ -4,14 +4,13 @@ import Tarea from './Modules/Tarea.js';
 import Pildora from './Modules/Pildora.js';
 
 
-async function getListadoFirmas() {
-    let respuesta = await Asistencia.getlistadoFirmas();
-    //console.log(respuesta);
-    // Tu Código
-}
+console.log(await Asistencia.getlistadoFirmas());
 
-// Funcionalidad de Firmar
+let firma = {
+	user_id: Auth.getCoder().id,
+	nota: 'texto test',
+	estado:0 // 1 para entrada, 0 para salida
+};
+//Asistencia.firmar(firma);
 
-// Funcionalidad mostrar Listado Tareas
-
-// Funcionalidad mostrar Listado Píldoras
+document.getElementById("Entrada").addEventListener('click', firma); 
