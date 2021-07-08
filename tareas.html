@@ -118,8 +118,22 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                    <!-- Tareas empieza aqui -->
+                    <!-- Pildoras empieza aqui -->
                     <div class="row">
+                        <div class="formulario">
+                            <form id="form" class="form">
+                                <label for="fname">Nombre:</label><br>
+                                <input type="text" id="fname" name="fname" value="" required><br>
+                                <label for="lname"> Categoría:</label><br>
+                                <input type="text " id="lnames" name="descripcion" value="" required><br>
+                                <label for="lname"> Descripción:</label><br>
+                                <input type="text " id="lname" name="descripcion" value="" required><br><br>
+                                <button type="submit"id="Enviar" class="btn btn-primary">Enviar</button> <br><br>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- Area Chart -->
                         <div class="col-xl-8 col-lg-7">
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
@@ -142,12 +156,33 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    
+                                    <!-- Lista falsa -->
+                        <div class="table-responsive">
+                            
+                            <table class="table">
+                                <h2>Lista de tareas</h2>
+                                <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Nombre</th>
+                                      <th scope="col">Categoría</th>
+                                      <th scope="col">Descripción</th>
+                                      <th scope="col">fecha de creación</th>
+                                      <th scope="col">Estado</th>
+                                   
+                                    </tr>
+                                  </thead>
+                                  <tbody id="tarea-list"></tbody>
+                            
+                             </table>
+                        
+                        </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Tareas termina aqui -->
+                    <!-- Pildoras termina aqui -->
+
                 </div>
                 <!-- /.container-fluid -->
 

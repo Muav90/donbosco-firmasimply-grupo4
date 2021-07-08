@@ -120,6 +120,19 @@
                 <div class="container-fluid">
                     <!-- Pildoras empieza aqui -->
                     <div class="row">
+                        <div class="formulario">
+                            <form id="form" class="form">
+                                <label for="fname">Nombre:</label><br>
+                                <input type="text" id="fname" name="fname" value="" required><br>
+                                <label for="lname"> Descripción:</label><br>
+                                <input type="text " id="lname" name="descripcion" value="" required><br>
+                                <label for="date">Fecha de presentación:</label><br>
+                                <input type="date" id="date" required><br><br>
+                                <button type="submit"id="Enviar" class="btn btn-primary">Enviar</button> <br><br>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
                         <!-- Area Chart -->
                         <div class="col-xl-8 col-lg-7">
                             <div class="card shadow mb-4">
@@ -143,7 +156,28 @@
                                 </div>
                                 <!-- Card Body -->
                                 <div class="card-body">
-                                    
+                                    <!-- Lista falsa -->
+                        <div class="table-responsive">
+                            
+                            <table class="table">
+                                <h2>Lista de pildoras</h2>
+                                <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">Nombre</th>
+                                      <th scope="col">Descripción</th>
+                                      <th scope="col">fecha de presentación</th>
+                                      <th scope="col">fecha de creación</th>
+                                      <th scope="col">Estado</th>
+                                      <th scope="col">Acciones</th>
+                                   
+                                    </tr>
+                                  </thead>
+                                  <tbody id="pildora-list"></tbody>
+                            
+                             </table>
+                        
+                        </div>
                                 </div>
                             </div>
                         </div>
