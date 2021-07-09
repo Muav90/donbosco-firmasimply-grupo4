@@ -41,8 +41,33 @@ async function firmasalida() {
 document.getElementById("Salida").addEventListener('click', firmasalida, false);
 
 
+getListadoTareas();
+async function getListadoTareas() {
+    let listadoTareas = await Tarea.getListadoTareas();
+    console.log(listadoTareas);
+    const list = document.getElementById('tarea-list')
+    //let finales = listado.reverse();
+    let ultimas = listadoTareas.slice(listadoTareas.length -6)
+    console.log(ultimas)
+    for (let i = 0; i < ultimas.length; i++) {
+        
+            const row = document.createElement('tr')
 
-async function listadoTareas() {
+            row.innerHTML = `
+                            <td>${ultimas[i].id}</td>
+                            <td>${ultimas[i].titulo}</td>
+                            <td>${ultimas[i].categoria_id}</td>
+                            <td>${ultimas[i].descripcion}</td>
+                            <td>${ultimas[i].created_at}</td>
+                            <td>${ultimas[i].estado}</td>
+                            <td><button id="${ultimas[i].id}" class="borrar">Borrar</button></td>
+                            `
+
+            list.appendChild(row)
+        
+    }
+}
+/* async function listadoTareas() {
 
 	console.log(await Tarea.getlistadoTareas());
 }
@@ -53,8 +78,45 @@ let tareas = {
 	nota: 'texto test',
 	estado:1 // 1 para entrada, 0 para
 	 };
-	
+	 */
 	 
+
+
+	 getListadoPildoras();
+async function getListadoPildoras() {
+    let listadoPildoras = await Pildora.getListadoPildoras();
+    console.log(listadoPildoras);
+    const list = document.getElementById('pildora-list')
+    // books.forEach((book) => UI.addBookToList(book))
+    //let finales = listado.reverse();
+    let ultimas = listadoPildoras.slice(listadoPildoras.length -4).reverse()
+    console.log(ultimas)
+    for (let i = 0; i < ultimas.length; i++) {
+        
+            const row = document.createElement('tr')
+            let check ;
+            if(ultimas[i].estado == 0){
+                check =`<td><label><input<type="chekbox" id="${ultimas[i].id}" class="pulsado" value="${ultimas[i].estado}">Pendiente</label></td>`;
+            }else{
+                check = `<td><label><input<type="chekbox" id="${ultimas[i].id}" class="pulsado" checked="true"  value="${ultimas[i].estado}">Presentado</label></td>`;
+            }
+
+            row.innerHTML = `
+                            <td>${ultimas[i].id}</td>
+                            <td>${ultimas[i].nombre}</td>
+                            <td>${ultimas[i].descripcion}</td>
+                            <td>${ultimas[i].fecha_presentacion}</td>
+                            <td>${ultimas[i].created_at}</td>
+                            <td>${ultimas[i].estado}</td>
+                            <td><button id="${ultimas[i].id}" class="borrar">Borrar</button></td>
+                            `
+
+            list.appendChild(row)
+        
+    }
+}
+
+
 async function listadoPildoras() {  
    console.log(await Pildora.getlistadoPildoras());
 }

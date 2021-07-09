@@ -154,24 +154,27 @@
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Tareas</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <!-- Card Body -->
-                                <div class="card-body">
+                                <div class="card">
 
+                                    <table class="table">
+                                      
+                                        <thead>
+                                            <tr>
+                                              <th scope="col">#</th>
+                                              <th scope="col">Nombre</th>
+                                              <th scope="col">Categoría</th>
+                                              <th scope="col">Descripción</th>
+                                              <th scope="col">fecha de creación</th>
+                                              <th scope="col">Estado</th>
+                                           
+                                            </tr>
+                                          </thead>
+                                          <tbody id="tarea-list"></tbody>
+                                    
+                                     </table>
                                 </div>
                             </div>
                         </div>
@@ -187,24 +190,28 @@
                                 <div
                                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                                     <h6 class="m-0 font-weight-bold text-primary">Pildoras</h6>
-                                    <div class="dropdown no-arrow">
-                                        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                        </a>
-                                        <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                            aria-labelledby="dropdownMenuLink">
-                                            <div class="dropdown-header">Dropdown Header:</div>
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <div class="dropdown-divider"></div>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                                 <!-- Card Body -->
-                                <div class="card-body">
-
+                                <div class="card">
+                                    <table class="table">
+                                        
+                                        <thead>
+                                            <tr>
+                                              <th scope="col">#</th>
+                                              <th scope="col">Nombre</th>
+                                              <th scope="col">Descripción</th>
+                                              <th scope="col">fecha de presentación</th>
+                                              <th scope="col">fecha de creación</th>
+                                              <th scope="col">Estado</th>
+                                              <th scope="col">Acciones</th>
+                                           
+                                            </tr>
+                                          </thead>
+                                          <tbody id="pildora-list"></tbody>
+                                    
+                                     </table>
+                                
                                 </div>
                             </div>
                         </div>
