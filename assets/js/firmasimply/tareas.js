@@ -17,8 +17,8 @@ async function getListadoTareas() {
 
             row.innerHTML = `
                             <td>${ultimas[i].id}</td>
-                            <td>${ultimas[i].nombre}</td>
-                            <td>${ultimas[i].categoria}</td>
+                            <td>${ultimas[i].titulo}</td>
+                            <td>${ultimas[i].categoria_id}</td>
                             <td>${ultimas[i].descripcion}</td>
                             <td>${ultimas[i].created_at}</td>
                             <td>${ultimas[i].estado}</td>
@@ -61,7 +61,7 @@ async function borrarTarea(e) {
     }
 	
 }
-
+Tarea.marcarTarea
 
 // Funcionalidad de borrar una tarea
 

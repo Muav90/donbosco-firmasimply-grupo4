@@ -1,5 +1,5 @@
-.eliminar {
-    text-align: right;
-    padding-right: 11%; 
+.formulario {
+    display: flex;
+    flex-direction: row; 
     
 }
